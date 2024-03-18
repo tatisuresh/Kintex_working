@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../kintex_camlink_tx_231023.gen/sources_1/ip/fifo_28by256/sim/fifo_28by256.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

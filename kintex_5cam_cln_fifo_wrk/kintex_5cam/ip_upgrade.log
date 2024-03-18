@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 21 15:42:39 2023
+| Host         : DESKTOP-401LVPF running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tfbg676-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_0 (xilinx.com:ip:ila:6.2) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 21 15:42:35 2023
+| Host         : DESKTOP-401LVPF running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tfbg676-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_28by256'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_28by256 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue Nov 21 15:42:34 2023
+| Host         : DESKTOP-401LVPF running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tfbg676-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'async_fifo_28by256'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of async_fifo_28by256 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 8)
+

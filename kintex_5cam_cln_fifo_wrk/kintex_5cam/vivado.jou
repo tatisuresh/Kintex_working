@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Mar 15 10:57:57 2024
+# Process ID: 14376
+# Current directory: D:/kintex_5cam_cleaned/kintex_5cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11744 D:\kintex_5cam_cleaned\kintex_5cam\kintex_camlink_tx_231023.xpr
+# Log file: D:/kintex_5cam_cleaned/kintex_5cam/vivado.log
+# Journal file: D:/kintex_5cam_cleaned/kintex_5cam\vivado.jou
+# Running On: SureshNaidu, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16527 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+set_property PROBES.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k160t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+set_property PROBES.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+write_cfgmem  -format mcs -size 64 -interface SPIx1 -loadbit {up 0x00000000 "D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit" } -file "D:/kintex_5cam_cleaned/kintex_5cam/kintex_fifo_clean.mcs"
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.FILES [list "D:/kintex_5cam_cleaned/kintex_5cam/kintex_fifo_clean.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7k160t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7k160t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7k160t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+delete_hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [get_hw_devices xc7k160t_0 ]]
+write_cfgmem  -format mcs -size 64 -interface SPIx1 -loadbit {up 0x00000000 "D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit" } -file "D:/kintex_5cam_cleaned/kintex_5cam/kintex_cln_fifo_ql.mcs"
+create_hw_cfgmem -hw_device [lindex [get_hw_devices xc7k160t_0] 0] [lindex [get_cfgmem_parts {mt25ql512-spi-x1_x2_x4}] 0]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROGRAM.ADDRESS_RANGE  {use_file} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.FILES [list "D:/kintex_5cam_cleaned/kintex_5cam/kintex_cln_fifo_ql.mcs" ] [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.PRM_FILE {} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.UNUSED_PIN_TERMINATION {pull-none} [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.ERASE  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CFG_PROGRAM  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.VERIFY  1 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+set_property PROGRAM.CHECKSUM  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+startgroup 
+create_hw_bitstream -hw_device [lindex [get_hw_devices xc7k160t_0] 0] [get_property PROGRAM.HW_CFGMEM_BITFILE [ lindex [get_hw_devices xc7k160t_0] 0]]; program_hw_devices [lindex [get_hw_devices xc7k160t_0] 0]; refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0];
+program_hw_cfgmem -hw_cfgmem [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices xc7k160t_0] 0]]
+endgroup
+write_cfgmem  -format mcs -size 64 -interface SPIx1 -loadbit {up 0x00000000 "D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit" } -file "D:/kintex_5cam_cleaned/kintex_5cam/kintex_cln_fifo_qu.mcs"
+save_wave_config {D:/kintex_5cam_cleaned/kintex_5cam/kintex_camlink_tx_231023.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

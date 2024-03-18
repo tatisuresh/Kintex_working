@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Mar 16 12:55:04 2024
+# Process ID: 7104
+# Current directory: D:/kintex_5cam_cln_fifo_wrk/kintex_5cam/K7_verilog/K7_verilog.runs/async_fifo_synth_1
+# Command line: vivado.exe -log async_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source async_fifo.tcl
+# Log file: D:/kintex_5cam_cln_fifo_wrk/kintex_5cam/K7_verilog/K7_verilog.runs/async_fifo_synth_1/async_fifo.vds
+# Journal file: D:/kintex_5cam_cln_fifo_wrk/kintex_5cam/K7_verilog/K7_verilog.runs/async_fifo_synth_1\vivado.jou
+# Running On: SureshNaidu, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16527 MB
+#-----------------------------------------------------------
+source async_fifo.tcl -notrace

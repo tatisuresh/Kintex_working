@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Mar 12 17:16:45 2024
+# Process ID: 14984
+# Current directory: D:/kintex_map_13dec_wrk/kintex_5cam
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19676 D:\kintex_map_13dec_wrk\kintex_5cam\kintex_camlink_tx_231023.xpr
+# Log file: D:/kintex_map_13dec_wrk/kintex_5cam/vivado.log
+# Journal file: D:/kintex_map_13dec_wrk/kintex_5cam\vivado.jou
+# Running On: SureshNaidu, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16527 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+set_property PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+create_hw_cfgmem -hw_device [get_hw_devices xc7k160t_0] -mem_dev [lindex [get_cfgmem_parts {mt25qu512-spi-x1_x2_x4}] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+set_property PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+write_hw_ila_data -csv_file {D:\kintex_map_13dec_wrk\kintex_5cam\kintex_camlink_tx_231023.runs\impl_1\negclk_data1234.csv} hw_ila_data_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+write_hw_ila_data -csv_file {D:\kintex_map_13dec_wrk\kintex_5cam\kintex_camlink_tx_231023.runs\impl_1\videoout0_fifo.csv} hw_ila_data_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7k160t_0] -filter {CELL_NAME=~"debuger"}]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/impl_1/fpga_top.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {dbg_sig} }

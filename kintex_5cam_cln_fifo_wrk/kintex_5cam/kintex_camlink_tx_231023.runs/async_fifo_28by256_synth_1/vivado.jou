@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Mar 13 19:26:30 2024
+# Process ID: 11660
+# Current directory: D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/async_fifo_28by256_synth_1
+# Command line: vivado.exe -log async_fifo_28by256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source async_fifo_28by256.tcl
+# Log file: D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/async_fifo_28by256_synth_1/async_fifo_28by256.vds
+# Journal file: D:/kintex_map_13dec_wrk/kintex_5cam/kintex_camlink_tx_231023.runs/async_fifo_28by256_synth_1\vivado.jou
+# Running On: SureshNaidu, OS: Windows, CPU Frequency: 1805 MHz, CPU Physical cores: 4, Host memory: 16527 MB
+#-----------------------------------------------------------
+source async_fifo_28by256.tcl -notrace
